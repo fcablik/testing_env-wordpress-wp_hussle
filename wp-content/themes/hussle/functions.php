@@ -1,5 +1,8 @@
 <?php
 
+// Removing front end admin bar because it's ugly
+    add_filter('show_admin_bar', '__return_false');
+
 function hussle_theme_support(){
     //add dynamic title tag support to www (WP feature)
     add_theme_support('title-tag');
@@ -82,8 +85,6 @@ add_action('widgets_init', 'hussle_widget_areas');
         ];
     
     }, 10, 4 );
-
-    //comment test
     
     function cc_mime_types( $mimes ){
         $mimes['svg'] = 'image/svg+xml';
@@ -100,3 +101,4 @@ add_action('widgets_init', 'hussle_widget_areas');
     //         </style>';
     // }
     // add_action( 'admin_head', 'fix_svg' );
+

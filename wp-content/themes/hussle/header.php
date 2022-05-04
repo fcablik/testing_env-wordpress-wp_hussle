@@ -18,6 +18,7 @@
 <body>
 
     <div class="loading-screen">
+
         <div class="loading-text">
             <span class="loading-words">W</span>
             <span class="loading-words">E</span>
@@ -33,14 +34,18 @@
             <span class="loading-words">S</span>
             <span class="loading-words">S</span>
             <span class="loading-words">L</span>
-            <span class="loading-words">E&nbsp;</span>
+            <span class="loading-words">E</span>
             <span class="loading-words">V</span>
             <span class="loading-words">E</span>
             <span class="loading-words">R</span>
             <span class="loading-words">S</span>
             <span class="loading-words">E</span>
-            
         </div>
+
+        <div class="loading-footer">
+            <span>// in development, see you soon</span>
+        </div>
+
     </div>
 
     <div class="container">
