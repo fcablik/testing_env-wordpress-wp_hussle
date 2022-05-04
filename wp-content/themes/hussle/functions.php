@@ -82,6 +82,8 @@ add_action('widgets_init', 'hussle_widget_areas');
         ];
     
     }, 10, 4 );
+
+    //comment test
     
     function cc_mime_types( $mimes ){
         $mimes['svg'] = 'image/svg+xml';
