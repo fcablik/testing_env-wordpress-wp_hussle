@@ -1,0 +1,223 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+}
+.loading-screen .loading-text {
+  font-family: SourceCodePro-Regular;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-screen .loading-text span {
+  display: inline-block;
+  color: #FFF;
+  margin: 0 -4px;
+}
+.loading-screen .loading-text span:nth-child(1) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0s infinite linear alternate;
+          animation: blur-text 1.8s 0s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(2) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.04s infinite linear alternate;
+          animation: blur-text 1.8s 0.04s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(3) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.08s infinite linear alternate;
+          animation: blur-text 1.8s 0.08s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(4) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.12s infinite linear alternate;
+          animation: blur-text 1.8s 0.12s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(5) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.16s infinite linear alternate;
+          animation: blur-text 1.8s 0.16s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(6) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.2s infinite linear alternate;
+          animation: blur-text 1.8s 0.2s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(7) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.24s infinite linear alternate;
+          animation: blur-text 1.8s 0.24s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(8) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.28s infinite linear alternate;
+          animation: blur-text 1.8s 0.28s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(9) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.32s infinite linear alternate;
+          animation: blur-text 1.8s 0.32s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(10) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.36s infinite linear alternate;
+          animation: blur-text 1.8s 0.36s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(11) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.4s infinite linear alternate;
+          animation: blur-text 1.8s 0.4s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(12) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.44s infinite linear alternate;
+          animation: blur-text 1.8s 0.44s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(13) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.48s infinite linear alternate;
+          animation: blur-text 1.8s 0.48s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(14) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.52s infinite linear alternate;
+          animation: blur-text 1.8s 0.52s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(15) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.56s infinite linear alternate;
+          animation: blur-text 1.8s 0.56s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(16) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.6s infinite linear alternate;
+          animation: blur-text 1.8s 0.6s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(17) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.64s infinite linear alternate;
+          animation: blur-text 1.8s 0.64s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(18) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.68s infinite linear alternate;
+          animation: blur-text 1.8s 0.68s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(19) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.72s infinite linear alternate;
+          animation: blur-text 1.8s 0.72s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(20) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.76s infinite linear alternate;
+          animation: blur-text 1.8s 0.76s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(21) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.8s infinite linear alternate;
+          animation: blur-text 1.8s 0.8s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(22) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.84s infinite linear alternate;
+          animation: blur-text 1.8s 0.84s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(23) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.88s infinite linear alternate;
+          animation: blur-text 1.8s 0.88s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(24) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.92s infinite linear alternate;
+          animation: blur-text 1.8s 0.92s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(25) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 0.96s infinite linear alternate;
+          animation: blur-text 1.8s 0.96s infinite linear alternate;
+}
+.loading-screen .loading-text span:nth-child(26) {
+  filter: blur(0);
+  -webkit-animation: blur-text 1.8s 1s infinite linear alternate;
+          animation: blur-text 1.8s 1s infinite linear alternate;
+}
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(0);
+  }
+  60% {
+    filter: blur(1.2px);
+  }
+}
+@keyframes blur-text {
+  0% {
+    filter: blur(0);
+  }
+  60% {
+    filter: blur(1.2px);
+  }
+}
+
+/* 
+Theme Name: Hussle Dev 22
+Text Domain: husslesystems
+Version: 1.0.8
+Description: Hussle Systems Dev template
+Tags: fancy, responsive, amazing
+Author: Hussle Systems
+Author URI: https://www.husslesystems.com/
+License: Open source MIT --- ?
+*/
+@font-face {
+  font-family: "SourceCodePro-Regular";
+  src: url("../../fonts/SourceCodePro-Regular.ttf");
+  src: url("../../fonts/SourceCodePro-Regular.ttf?#iefix") format("ie9-skip-eot"), url("../../fonts/SourceCodePro-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
+}
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../../fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2") format("woff2"), url("../../fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff") format("woff"), url("../../fonts/OTF/SourceCodePro-Regular.otf") format("opentype"), url("../../fonts/TTF/SourceCodePro-Regular.ttf") format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+}
+
+a {
+  font-size: 19px;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
