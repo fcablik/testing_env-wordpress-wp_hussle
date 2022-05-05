@@ -1,7 +1,7 @@
 /* 
 Theme Name: Hussle Dev 22
 Text Domain: husslesystems
-Version: 1.0.8
+Version: 1.0.8.11
 Description: Hussle Systems Dev template
 Tags: fancy, responsive, amazing
 Author: Hussle Systems
@@ -12,31 +12,6 @@ License: Open source MIT --- ?
 //!
     //* @SASS for this project is currently compiling into the: "/wp-content/hussle/" folder
 //!
-
-//* load fonts:
-//!TODO:FIXME:
-@font-face {
-    font-family: "SourceCodePro-Regular";
-    src: url("../../fonts/SourceCodePro-Regular.ttf");
-    src: url("../../fonts/SourceCodePro-Regular.ttf?#iefix") format("ie9-skip-eot"),
-    url("../../fonts/SourceCodePro-Regular.ttf") format("ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-variant-numeric: lining-nums;
-    -webkit-font-feature-settings: "lnum";
-    font-feature-settings: "lnum";
-}
-
-@font-face{
-    font-family: 'Source Code Pro';
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('../../fonts/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2') format('woff2'),
-         url('../../fonts/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'),
-         url('../../fonts/OTF/SourceCodePro-Regular.otf') format('opentype'),
-         url('../../fonts/TTF/SourceCodePro-Regular.ttf') format('truetype');
-}
 
 html{
 

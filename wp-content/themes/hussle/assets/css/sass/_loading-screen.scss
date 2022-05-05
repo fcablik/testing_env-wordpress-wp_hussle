@@ -33,7 +33,7 @@ html, body {
 	.loading-text,
 	.loading-footer {
 
-		font-family: SourceCodePro-Regular;
+		font-family: SourceCodePro;
 		@include position-center;
 		width: 100%;
 
@@ -70,12 +70,11 @@ html, body {
 	.loading-footer {
 
 		line-height: 100px;
-		opacity: .3;
 		
 		span {
 
 			font-size: 13px;
-			// text-transform: uppercase;
+			color: #00FF62;
 
 		}
 
