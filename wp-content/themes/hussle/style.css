@@ -96,13 +96,10 @@
   font-stretch: normal;
   src: url("assets/fonts/WOFF2/TTF/SourceCodePro-BlackIt.ttf.woff2") format("woff2"), url("assets/fonts/WOFF/OTF/SourceCodePro-BlackIt.otf.woff") format("woff"), url("assets/fonts/OTF/SourceCodePro-BlackIt.otf") format("opentype"), url("assets/fonts/TTF/SourceCodePro-BlackIt.ttf") format("truetype");
 }
-html, body {
+.loading-screen {
   margin: 0;
   height: 100%;
   overflow: hidden;
-}
-
-.loading-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -140,7 +137,7 @@ html, body {
 .loading-screen .loading-text {
   height: 100px;
   line-height: 100px;
-  font-size: 20px;
+  font-size: 16px;
   top: 0;
 }
 .loading-screen .loading-text span {
@@ -280,7 +277,7 @@ html, body {
   line-height: 100px;
 }
 .loading-screen .loading-footer span {
-  font-size: 13px;
+  font-size: 12px;
   color: #00FF62;
 }
 @-webkit-keyframes blur-text {
@@ -318,7 +315,31 @@ body {
   background-color: #000;
 }
 
+span,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+  font-family: SourceCodePro;
+}
+
 a {
   font-size: 19px;
   color: black;
+}
+
+.interactive-border::after {
+  content: "";
+  background: linear-gradient(106deg, #85C9BF, #576086, #A36FB2 95%);
+  height: 3px;
+  width: 100%;
+}
+
+.home-intro {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

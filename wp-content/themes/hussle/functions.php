@@ -26,7 +26,7 @@ function hussle_load_styles(){
 
         $version = wp_get_theme()->get('Version');
     wp_enqueue_style('hussle-style', get_template_directory_uri() . "/style.css", ['hussle-bootstrap'], $version, 'all');
-    wp_enqueue_style('hussle-bootstrap', get_template_directory_uri() . "/assets/css/bootstrap/css/bootstrap.min.css", [], '5.1.3', 'all');
+    wp_enqueue_style('hussle-bootstrap', get_template_directory_uri() . "/assets/css/bootstrap/bootstrap.min.css", [], '5.1.3', 'all');
     // //!slow-loadUp //wp_enqueue_style('hussle-bootstrap-icons', "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css", [], '1.8.1', 'all');
 
 }

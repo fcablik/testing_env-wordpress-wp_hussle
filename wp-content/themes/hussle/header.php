@@ -17,7 +17,7 @@
  
 <body>
 
-    <div class="loading-screen">
+    <div id="loadingScreen" class="loading-screen">
 
         <div class="loading-text">
             <span class="loading-words">W</span>
@@ -50,11 +50,9 @@
 
     <div class="container">
 
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
 
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"></a>
-
-            
 
             <a href="/" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
@@ -66,8 +64,8 @@
 
                     }
                 ?>
-                <img class="logo" height="50"
-                src="<?php echo $logo[0] ?>" 
+                <img class="logo" height="30"
+                src="<?php echo $logo[0] ?>"
                 alt="logo">
 
             </a>
@@ -79,7 +77,7 @@
                     <i class="bi bi-arrow-down-left-square-fill"></i>
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal //TODO: customize later -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -106,7 +104,7 @@
                         </div>
                         </div>
                     </div>
-                </div>
+                </div>s
 
             </div>
 
@@ -118,7 +116,7 @@
         ?>
         <?php
             // www name
-            echo get_bloginfo('name');
+            // echo get_bloginfo('name');
         ?>
 
         <div class="main-wrapper">

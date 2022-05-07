@@ -5,3 +5,12 @@ a {
 
 }
 
+//! not working code
+.interactive-border::after {
+
+    content: "";
+    background: $borderPrimaryColor;
+    height: 3px;
+    width: 100%;
+
+}
