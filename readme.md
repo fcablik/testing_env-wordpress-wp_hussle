@@ -1,3 +1,3 @@
 # System:   WordPress 5.9.1
-# Template: HussleX 1.0.0
-# Theme:    HussleX 1.0.0
+# Template: hussleverse WP Theme 1.0.0
+# Theme:    hussleverse WP Theme 1.0.0
