@@ -298,21 +298,27 @@
 }
 
 /* 
-Theme Name: Hussle Dev 22
-Text Domain: husslesystems
-Version: 1.0.8.11
-Description: Hussle Systems Dev template
-Tags: fancy, responsive, amazing
-Author: Hussle Systems
-Author URI: https://www.husslesystems.com/
-License: Open source MIT --- ?
+Theme Name: hussleverse WP Theme
+Text Domain: hussleverse.dev
+Version: 1.0.0
+Description: Custom WordPress theme developed for online custom web-development purposes. Not intended for resale or distribution, this theme version is a OpenSource edition. --Created & developed by hussleverse.
+Tags: responsive, simple, custom, styled, widgets, custom-menu, custom-blog, mobile-menu, desktop-menu, menu, theme-simplicity, simple-editor, multilanguage-options, footer-widgets, content-widgets, footer-widgets, &more
+Author: hussleverse
+Author URI: https://www.hussleverse.dev/
+License: Open Source MIT License
 */
 html {
   scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
-body {
-  background-color: #000;
+section {
+  block-size: 100vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: grid;
+  place-items: center;
 }
 
 span,
@@ -326,20 +332,157 @@ h5,
 h6,
 i {
   font-family: SourceCodePro;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  font-size: 19px;
-  color: black;
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.interactive-border::after {
-  content: "";
-  background: linear-gradient(106deg, #85C9BF, #576086, #A36FB2 95%);
+span,
+p,
+a,
+ul,
+ol,
+dl {
+  font-size: 13px;
+}
+
+.navigation.pagination {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .hide-m {
+    display: none !important;
+  }
+}
+.header-main {
+  background-color: #000;
+  color: #000;
+  box-shadow: 0px 8px 15px 3px rgba(0, 0, 0, 0.0588235294);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65em var(--bs-gutter-x, 4.65rem);
+  display: flex;
+}
+@media (max-width: 991px) {
+  .header-main {
+    padding: 0.65em;
+  }
+}
+.header-main .column-header {
+  display: flex;
+}
+.header-main .column-header a {
+  color: #FFF;
+}
+.header-main .column-header a:hover,
+.header-main .column-header a:focus,
+.header-main .column-header a:active,
+.header-main .column-header a.active {
+  color: #00FF62;
+}
+.header-main .column-header.logo {
+  justify-content: center;
+}
+.header-main .column-header.main-menu {
+  justify-content: end;
+}
+
+.body-burger {
+  margin-bottom: -5px;
+}
+.body-burger .hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.body-burger .hamburger .bar {
+  padding: 0;
+  width: 30px;
   height: 3px;
-  width: 100%;
+  background-color: #FFF;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+.body-burger .bar1 {
+  top: 6px;
+}
+.body-burger .bar2,
+.body-burger .bar3 {
+  top: 13.5px;
+}
+.body-burger .bar3 {
+  right: 0;
+}
+.body-burger .bar4 {
+  bottom: 5px;
+}
+.body-burger .checkbox2:checked + label > .hamburger2 > .bar1 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+.body-burger .checkbox2:checked + label > .hamburger2 > .bar2 {
+  transform: rotate(45deg);
+}
+.body-burger .checkbox2:checked + label > .hamburger2 > .bar3 {
+  transform: rotate(-45deg);
+}
+.body-burger .checkbox2:checked + label > .hamburger2 > .bar4 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  .body-burger {
+    display: none !important;
+  }
 }
 
-.home-intro {
-  text-align: center;
+.footer-main {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em var(--bs-gutter-x, 4.75rem);
+}
+
+@media (max-width: 991px) {
+  .nav-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .nav-sm {
+    display: none !important;
+  }
+}
+.archive-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.view-1,
+section.view-3,
+section.view-5,
+section.view-7 {
+  background: #000;
+}
+
+section.view-2,
+section.view-4,
+section.view-6,
+section.view-8 {
+  background: #FFF;
 }/*# sourceMappingURL=style.css.map */

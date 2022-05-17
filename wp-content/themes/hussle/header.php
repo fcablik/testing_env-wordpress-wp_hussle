@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog Site Template">
-    <meta name="author" content="https://www.husslesystems.com">
-    <link rel="shortcut icon" href="/wp-content/themes/hussle/assets/images/favicon.ico"> 
+    <meta name="author" content="hussleverse.dev">
+    <link rel="shortcut icon" href="/wp-content/themes/hussle/assets/images/logo.png"> 
 
 	<?php
 	    wp_head();
@@ -48,83 +48,64 @@
 
     </div>
 
-    <div class="container">
+    <header class="header-main sticky-top">
 
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"></a>
-
-            <a href="/" class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-
+        <div class="col-md-4 column-header quick-menu hide-m">
+            <a>Quick Contacts</a>
+        </div>
+        <div class="col-md-4 column-header logo">
+            <a href="/">
                 <?php
                     if(function_exists('the_custom_logo'))
                     {
                         $custom_logo_id = get_theme_mod('custom_logo');
                         $logo           = wp_get_attachment_image_src($custom_logo_id, 'full');
-
                     }
                 ?>
-                <img class="logo" height="30"
-                src="<?php echo $logo[0] ?>"
-                alt="logo">
-
+                <img class="logo" height="20" src="<?php echo $logo[0] ?>" alt="logo">
             </a>
+        </div>
 
-            <div class="col-md-3 text-end">
-                
-               <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="bi bi-arrow-down-left-square-fill"></i>
-                </button>
+        <div class="col-md-4 column-header main-menu">
+            <?php
+                wp_nav_menu(
+                    [
+                        'menu'           => 'primary',
+                        'container'      => '',
+                        'theme_location' => 'primary',
+                        'items_wrap'     => '<ul class="nav nav-lg">%3$s</ul>',
 
-                <!-- Modal //TODO: customize later -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <?php
-                                wp_nav_menu(
-                                    [
-                                        'menu'           => 'primary',
-                                        'container'      => '',
-                                        'theme_location' => 'primary',
-                                        'items_wrap'     => '<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">%3$s</ul>',
+                    ]
+                );
+            ?>
 
-                                    ]
-                                );
-                            ?>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                        </div>
+            <!-- //!TODO: burger-mobile-menu? -->
+            <div class="body-burger">
+                <input type="checkbox" id="checkbox2" class="checkbox2 hide">
+                <label for="checkbox2">
+                    <div class="hamburger hamburger2">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
                     </div>
-                </div>s
-
+                </label>
             </div>
+            <!-- <div class="modal hide">
+                <?php
+                    wp_nav_menu(
+                        [
+                            'menu'           => 'primary',
+                            'container'      => '',
+                            'theme_location' => 'primary',
+                            'items_wrap'     => '<ul class="nav nav-sm">%3$s</ul>',
 
-        </header>
+                        ]
+                    );
+                ?>
+            </div> -->
+        </div>
 
-        <?php
-            // sidebar widget
-            dynamic_sidebar('sidebar-1');
-        ?>
-        <?php
-            // www name
-            // echo get_bloginfo('name');
-        ?>
+    </header>
 
-        <div class="main-wrapper">
-            <div class="page-title theme-bg-light text-center gradient py-5">
-                <h1 class="heading">
-                    <?php
-                        // page title
-                        the_title();
-                    ?>
-                </h1>
-            </div>
+    <div class="main-wrapper">

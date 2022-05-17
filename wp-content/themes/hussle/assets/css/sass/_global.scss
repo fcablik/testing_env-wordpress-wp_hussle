@@ -1,16 +1,24 @@
-a {
+.navigation.pagination {
 
-    font-size: 19px;
-    color: $primaryTextColor;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 
 }
 
 //! not working code
-.interactive-border::after {
+// .interactive-border::after {
 
-    content: "";
-    background: $borderPrimaryColor;
-    height: 3px;
-    width: 100%;
+//     content: "";
+//     background: $borderPrimaryColor;
+//     height: 3px;
+//     width: 100%;
 
-}
+// }
+
+// header {
+
+//     position: fixed;
+
+// }
+

@@ -2,8 +2,7 @@
 get_header();
 ?>
 
-<div class="content px-3 py-5 p-md-5">
-
+<div class="archive-content">
     <?php
         if (have_posts())
         {
@@ -16,12 +15,11 @@ get_header();
             }
         }
     ?>
-
-    <?php
-        the_posts_pagination();
-    ?>
-
 </div>
+
+<?php
+    the_posts_pagination();
+?>
 
 <?php
 get_footer();

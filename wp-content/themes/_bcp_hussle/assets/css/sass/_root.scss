@@ -1,0 +1,55 @@
+/* 
+Theme Name: Hussle Dev 22
+Text Domain: husslesystems
+Version: 1.0.8.11
+Description: Hussle Systems Dev template
+Tags: fancy, responsive, amazing
+Author: Hussle Systems
+Author URI: https://www.husslesystems.com/
+License: Open source MIT --- ?
+*/
+
+//!
+    //* @SASS for this project is currently compiling into the: "/wp-content/hussle/" folder
+//!
+
+html{
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+}
+
+body {
+
+    background-color: $mainBcg;
+
+}
+
+section {
+
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    display: grid;
+    place-items: center;
+
+}
+
+span,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+
+    font-family: SourceCodePro;
+
+}
+
+

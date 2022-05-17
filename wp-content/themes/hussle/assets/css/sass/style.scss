@@ -1,7 +1,12 @@
 // import sass
-    @import "load-fonts";
     @import "variables";
+    @import 'load-fonts';
     @import "loading-screen";
-    @import "root";
+    @import "root";  
     @import "global";
-    @import "homepage";
+    @import "custom-class";
+    @import "header";
+    @import "footer";
+    @import "nav";
+    @import "archive";
+    @import "view-scroll";
