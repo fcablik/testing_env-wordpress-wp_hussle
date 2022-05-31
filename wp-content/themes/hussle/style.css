@@ -314,11 +314,9 @@ html {
 }
 
 section {
-  block-size: 100vh;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  display: grid;
-  place-items: center;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 span,
@@ -392,7 +390,7 @@ dl {
 .header-main .column-header a:focus,
 .header-main .column-header a:active,
 .header-main .column-header a.active {
-  color: #00FF62;
+  color: #D43939;
 }
 .header-main .column-header.logo {
   justify-content: center;

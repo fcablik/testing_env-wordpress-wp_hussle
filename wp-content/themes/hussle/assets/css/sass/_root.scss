@@ -22,11 +22,11 @@ html{
 
 section {
 
-    block-size: 100vh;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-    display: grid;
-    place-items: center;
+    //TODO: make body not scrollable at HP
+
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 
 }
 
